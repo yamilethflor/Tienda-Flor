@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLOR — Ropa, Calzado & Mucho Más</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (ícono WhatsApp) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS FLOR (una sola vez) -->
+  <link rel="stylesheet" href="flor.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     HEADER
+═══════════════════════════════════════ -->
+<header>
+  <div class="logo" onclick="showPage('inicio')">
+    <span class="logo-letter">F</span><span class="logo-dot"></span>
+    <span class="logo-letter">L</span><span class="logo-dot"></span>
+    <span class="logo-letter">O</span><span class="logo-dot"></span>
+    <span class="logo-letter">R</span>
+  </div>
+
+  <!-- Botón hamburguesa (móvil) -->
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="navbar">
+    <ul>
+      <li><a data-page="inicio"   onclick="showPage('inicio')">Inicio</a></li>
+      <li><a data-page="mujer"    onclick="showPage('mujer')">Mujer</a></li>
+      <li><a data-page="hombre"   onclick="showPage('hombre')">Hombre</a></li>
+      <li><a data-page="calzado"  onclick="showPage('calzado')">Calzado</a></li>
+      <li><a data-page="nosotros" onclick="showPage('nosotros')">Nosotros</a></li>
+      <li><a data-page="muchomas" onclick="showPage('muchomas')">Mucho Más</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- ═══════════════════════════════════════
+     HERO INICIO
+═══════════════════════════════════════ -->
+<section id="hero-main" class="hero">
+  <div class="hero-sticker-tr">✿</div>
+  <div class="hero-sticker-bl">✿</div>
+  <div class="hero-line-left"></div>
+  <div class="hero-line-right"></div>
+  <p class="hero-tag">Colección 2026</p>
+  <div class="hero-content">
+    <h1>Elegancia en <em>cada detalle</em></h1>
+    <p>Descubre nuestra colección exclusiva de temporada</p>
+    <a href="https://wa.me/573219024318" class="btn-shop" target="_blank">Comprar Ahora</a>
+  </div>
+</section>
+
+<!-- HEROS MINI -->
+<section id="hero-mujer" class="hero hero-mini" style="display:none;">
+  <div class="hero-sticker-left">🌸</div><div class="hero-sticker-right">🌸</div>
+  <div class="hero-line-left"></div><div class="hero-line-right"></div>
+  <p class="hero-tag">Colección 2026</p>
+  <div class="hero-content"><h1>Mujer</h1><p>Ropa · Calzado · Accesorios</p></div>
+</section>
+
+<section id="hero-hombre" class="hero hero-mini" style="display:none;">
+  <div class="hero-sticker-left">🌿</div><div class="hero-sticker-right">🌿</div>
+  <div class="hero-line-left"></div><div class="hero-line-right"></div>
+  <p class="hero-tag">Colección 2026</p>
+  <div class="hero-content"><h1>Hombre</h1><p>Ropa · Calzado · Accesorios</p></div>
+</section>
+
+<section id="hero-calzado" class="hero hero-mini" style="display:none;">
+  <div class="hero-sticker-left">👟</div><div class="hero-sticker-right">👟</div>
+  <div class="hero-line-left"></div><div class="hero-line-right"></div>
+  <p class="hero-tag">Colección 2026</p>
+  <div class="hero-content"><h1>Calzado</h1><p>Deportivo · Formal · Casual</p></div>
+</section>
+
+<section id="hero-muchomas" class="hero hero-mini" style="display:none;">
+  <div class="hero-sticker-left">💄</div><div class="hero-sticker-right">💄</div>
+  <div class="hero-line-left"></div><div class="hero-line-right"></div>
+  <p class="hero-tag">Colección 2026</p>
+  <div class="hero-content"><h1>Mucho <em>Más</em></h1><p>Artesanías · Maquillaje · Accesorios</p></div>
+</section>
+
+<section id="hero-nosotros" class="hero hero-mini" style="display:none;">
+  <div class="hero-sticker-left">✿</div><div class="hero-sticker-right">✿</div>
+  <div class="hero-line-left"></div><div class="hero-line-right"></div>
+  <p class="hero-tag">Nuestra historia</p>
+  <div class="hero-content"><h1>Nosotros</h1><p>Pasión · Moda · Colombia</p></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PÁGINA: INICIO
+═══════════════════════════════════════ -->
+<section id="page-inicio" class="page-section active">
+  <p class="section-heading">Nuestras Categorías</p>
+  <p class="section-sub">Ropa · Calzado · Accesorios · Belleza</p>
+  <div class="divider"></div>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="product-img-box cat-mujer-Kok1">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Blusas Koketas</div>
+        <div class="product-caracteristica">Algodón premium, corte moderno. Disponible en varios colores.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">S</button>
+          <button class="talla-btn" onclick="selTalla(this)">M</button>
+          <button class="talla-btn" onclick="selTalla(this)">L</button>
+          <button class="talla-btn" onclick="selTalla(this)">XL</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$89.900</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-mujer-jaime">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Blusas Elegantes</div>
+        <div class="product-caracteristica">Tela suave con caída perfecta. Ideal para toda ocasión.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">S</button>
+          <button class="talla-btn" onclick="selTalla(this)">M</button>
+          <button class="talla-btn" onclick="selTalla(this)">L</button>
+          <button class="talla-btn" onclick="selTalla(this)">XL</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$75.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-mujer-sp">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Blusas Nova</div>
+        <div class="product-caracteristica">Estampados exclusivos, tela fresca para clima cálido.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">S</button>
+          <button class="talla-btn" onclick="selTalla(this)">M</button>
+          <button class="talla-btn" onclick="selTalla(this)">L</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$62.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-hombre-mavar">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Camisas Mavar</div>
+        <div class="product-caracteristica">Tela fluida, múltiples estilos. Ideal para toda ocasión.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">XS</button>
+          <button class="talla-btn" onclick="selTalla(this)">S</button>
+          <button class="talla-btn" onclick="selTalla(this)">M</button>
+          <button class="talla-btn" onclick="selTalla(this)">L</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$65.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-hombre-kc">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Camisas Kcios</div>
+        <div class="product-caracteristica">Algodón premium, cortes modernos y clásicos.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">S</button>
+          <button class="talla-btn" onclick="selTalla(this)">M</button>
+          <button class="talla-btn" onclick="selTalla(this)">L</button>
+          <button class="talla-btn" onclick="selTalla(this)">XL</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$95.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-mujer-bot">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Botines Mujer</div>
+        <div class="product-caracteristica">Cuero suave, suela cómoda. Elegancia para cada paso.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">35</button>
+          <button class="talla-btn" onclick="selTalla(this)">36</button>
+          <button class="talla-btn" onclick="selTalla(this)">37</button>
+          <button class="talla-btn" onclick="selTalla(this)">38</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$145.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-hombre-bot1">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Botines Hombre</div>
+        <div class="product-caracteristica">Cuero genuino, suela antideslizante. Confort todo el día.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">40</button>
+          <button class="talla-btn" onclick="selTalla(this)">41</button>
+          <button class="talla-btn" onclick="selTalla(this)">42</button>
+          <button class="talla-btn" onclick="selTalla(this)">43</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$155.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-mujer-coll">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Collares Artesanales</div>
+        <div class="product-caracteristica">Artesanía colombiana, piezas únicas con materiales naturales.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">Único</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$55.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-mujer-art">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Artes Artesanales</div>
+        <div class="product-caracteristica">Piezas únicas hechas a mano. Arte colombiano en cada detalle.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">Único</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$89.900</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-mujer-pur">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Maquillaje Purpure</div>
+        <div class="product-caracteristica">Larga duración, colores vibrantes. Fórmula hipoalergénica.</div>
+        <div class="tallas-label">Tono</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">01</button>
+          <button class="talla-btn" onclick="selTalla(this)">02</button>
+          <button class="talla-btn" onclick="selTalla(this)">03</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$45.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-mujer-tre">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Maquillaje Trendy</div>
+        <div class="product-caracteristica">Kit completo de maquillaje. Colores modernos para toda ocasión.</div>
+        <div class="tallas-label">Tono</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">01</button>
+          <button class="talla-btn" onclick="selTalla(this)">02</button>
+          <button class="talla-btn" onclick="selTalla(this)">03</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$55.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box cat-mixto-medi">
+        <button class="img-overlay-btn">Ver Producto</button>
+      </div>
+      <div class="product-info">
+        <div class="product-name">Medias Elegantes</div>
+        <div class="product-caracteristica">Pack variado. Algodón premium, colores y estampados únicos.</div>
+        <div class="tallas-label">Talla</div>
+        <div class="tallas-row">
+          <button class="talla-btn" onclick="selTalla(this)">S</button>
+          <button class="talla-btn" onclick="selTalla(this)">M</button>
+          <button class="talla-btn" onclick="selTalla(this)">L</button>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">$22.000</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PÁGINA: MUJER
+═══════════════════════════════════════ -->
+<section id="page-mujer" class="page-section">
+  <p class="section-heading">MUJER</p>
+  <p class="section-sub">Toda la colección femenina</p>
+  <div class="divider"></div>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carousel-mujer">
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-body"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Body</div>
+          <div class="product-caracteristica">Tela ajustada de lycra, escote elegante. Looks sofisticados.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">XS</button>
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$72.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam1"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Camisa Clásica</div>
+          <div class="product-caracteristica">Algodón suave, manga larga. Colores neutros y vibrantes.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$68.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam2"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Blusa Escote V</div>
+          <div class="product-caracteristica">Tela liviana con caída perfecta. Escote en V elegante.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">XS</button>
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$58.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam3"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Blusa Estampada</div>
+          <div class="product-caracteristica">Estampados exclusivos, tela fresca para clima cálido.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+            <button class="talla-btn" onclick="selTalla(this)">XL</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$62.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam4"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Blusa Linda</div>
+          <div class="product-caracteristica">Diseño romántico con detalles en encaje. Elegancia natural.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$75.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam5"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Koketa Casual</div>
+          <div class="product-caracteristica">Look relajado y moderno. Perfecta para el día a día.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">XS</button>
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$54.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam6"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Koketa Lycra</div>
+          <div class="product-caracteristica">Tela ajustada de lycra, escote elegante. Looks sofisticados.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">XS</button>
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$72.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam7"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Koketa Colores</div>
+          <div class="product-caracteristica">Algodón suave, variedad de colores. Estilo y comodidad.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$68.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam8"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Koketa Premium</div>
+          <div class="product-caracteristica">Tela premium con caída perfecta. Diseño exclusivo.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">XS</button>
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$58.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam9"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Koketa Tropical</div>
+          <div class="product-caracteristica">Estampados vibrantes, tela fresca para clima cálido.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+            <button class="talla-btn" onclick="selTalla(this)">XL</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$62.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam10"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Koketa Encaje</div>
+          <div class="product-caracteristica">Diseño romántico con detalles en encaje. Elegancia natural.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$75.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-dama-cam11"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Koketa Sport</div>
+          <div class="product-caracteristica">Look activo y moderno. Perfecta para el día a día.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">XS</button>
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$54.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn" onclick="slide('mujer',-1)">&#8592;</button>
+    <button class="carousel-btn" onclick="slide('mujer',1)">&#8594;</button>
+    <div class="carousel-dots" id="dots-mujer"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PÁGINA: HOMBRE
+═══════════════════════════════════════ -->
+<section id="page-hombre" class="page-section">
+  <p class="section-heading">HOMBRE</p>
+  <p class="section-sub">Toda la colección masculina</p>
+  <div class="divider"></div>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carousel-hombre">
+
+      <div class="product-card">
+        <div class="product-img-box cat-hombre-camh1"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Camisa Blanca</div>
+          <div class="product-caracteristica">Algodón premium, corte clásico. Perfecto para cualquier ocasión.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+            <button class="talla-btn" onclick="selTalla(this)">XL</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$95.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-hombre-camh2"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Camisa Verde</div>
+          <div class="product-caracteristica">Tela resistente, color intenso. Estilo casual y fresco.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+            <button class="talla-btn" onclick="selTalla(this)">XL</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$95.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-hombre-camh3"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Camisa Azul Rey</div>
+          <div class="product-caracteristica">Color vibrante, tela de alta calidad. Ideal para el trabajo y salidas.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$95.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-hombre-camh4"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Camisa Azul Oscuro</div>
+          <div class="product-caracteristica">Elegancia masculina, corte slim. Para ocasiones especiales.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+            <button class="talla-btn" onclick="selTalla(this)">XL</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$105.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-hombre-camh5"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Camisa Diseño</div>
+          <div class="product-caracteristica">Diseño exclusivo, estampado moderno. Destácate en cualquier lugar.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+            <button class="talla-btn" onclick="selTalla(this)">XL</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$110.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-hombre-camh6"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Camisa Casual</div>
+          <div class="product-caracteristica">Cómoda y versátil. Perfecta para el día a día.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+            <button class="talla-btn" onclick="selTalla(this)">XL</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$95.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-hombre-camh7"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Camisa Con Líneas</div>
+          <div class="product-caracteristica">Estilo urbano moderno. Combinación perfecta de comodidad y estilo.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+            <button class="talla-btn" onclick="selTalla(this)">XL</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$98.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn" onclick="slide('hombre',-1)">&#8592;</button>
+    <button class="carousel-btn" onclick="slide('hombre',1)">&#8594;</button>
+    <div class="carousel-dots" id="dots-hombre"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PÁGINA: CALZADO
+═══════════════════════════════════════ -->
+<section id="page-calzado" class="page-section">
+  <p class="section-heading">Calzado</p>
+  <p class="section-sub">Para él y para ella</p>
+  <div class="divider"></div>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carousel-calzado">
+
+      <div class="product-card">
+        <div class="product-img-box cat-calzado-bot1"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Botín Deportivo</div>
+          <div class="product-caracteristica">Suela amortiguadora, diseño aerodinámico. Alto rendimiento.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">37</button>
+            <button class="talla-btn" onclick="selTalla(this)">38</button>
+            <button class="talla-btn" onclick="selTalla(this)">39</button>
+            <button class="talla-btn" onclick="selTalla(this)">40</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$185.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-calzado-bot2"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Botín Formal</div>
+          <div class="product-caracteristica">Cuero italiano, suela de goma. Perfecto para eventos.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">37</button>
+            <button class="talla-btn" onclick="selTalla(this)">38</button>
+            <button class="talla-btn" onclick="selTalla(this)">39</button>
+            <button class="talla-btn" onclick="selTalla(this)">40</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$210.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-calzado-bot3"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Botín Casual</div>
+          <div class="product-caracteristica">Estilo urbano moderno, suela flexible. Uso diario.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">37</button>
+            <button class="talla-btn" onclick="selTalla(this)">38</button>
+            <button class="talla-btn" onclick="selTalla(this)">39</button>
+            <button class="talla-btn" onclick="selTalla(this)">40</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$168.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-calzado-bot4"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Botín Cuero</div>
+          <div class="product-caracteristica">Cuero genuino, plantilla ergonómica. Estilo y comodidad.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">40</button>
+            <button class="talla-btn" onclick="selTalla(this)">41</button>
+            <button class="talla-btn" onclick="selTalla(this)">42</button>
+            <button class="talla-btn" onclick="selTalla(this)">43</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$210.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-calzado-bot5"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Botín Elegante</div>
+          <div class="product-caracteristica">Diseño refinado, materiales de primera. Para el hombre moderno.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">40</button>
+            <button class="talla-btn" onclick="selTalla(this)">41</button>
+            <button class="talla-btn" onclick="selTalla(this)">42</button>
+            <button class="talla-btn" onclick="selTalla(this)">43</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$168.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-calzado-bot6"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Botín Negro</div>
+          <div class="product-caracteristica">Clásico e imperecedero. Combina con todo en tu guardarropa.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">40</button>
+            <button class="talla-btn" onclick="selTalla(this)">41</button>
+            <button class="talla-btn" onclick="selTalla(this)">42</button>
+            <button class="talla-btn" onclick="selTalla(this)">43</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$195.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-calzado-bot7"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Botín Sport</div>
+          <div class="product-caracteristica">Suela flexible y cómoda. Perfecto para el día activo.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">40</button>
+            <button class="talla-btn" onclick="selTalla(this)">41</button>
+            <button class="talla-btn" onclick="selTalla(this)">42</button>
+            <button class="talla-btn" onclick="selTalla(this)">43</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$168.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-calzado-bot8"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Botín Marrón</div>
+          <div class="product-caracteristica">Tono cálido, cuero de calidad. Versátil y duradero.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">40</button>
+            <button class="talla-btn" onclick="selTalla(this)">41</button>
+            <button class="talla-btn" onclick="selTalla(this)">42</button>
+            <button class="talla-btn" onclick="selTalla(this)">43</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$168.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn" onclick="slide('calzado',-1)">&#8592;</button>
+    <button class="carousel-btn" onclick="slide('calzado',1)">&#8594;</button>
+    <div class="carousel-dots" id="dots-calzado"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PÁGINA: MUCHO MÁS
+═══════════════════════════════════════ -->
+<section id="page-muchomas" class="page-section">
+  <p class="section-heading">Mucho Más</p>
+  <p class="section-sub">Todo lo que necesitas en un solo lugar</p>
+  <div class="divider"></div>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carousel-muchomas">
+
+      <div class="product-card">
+        <div class="product-img-box cat-mujer-maq1"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Maquillaje Purpure</div>
+          <div class="product-caracteristica">Kit completo Purpure. Larga duración, fórmula hipoalergénica.</div>
+          <div class="tallas-label">Tono</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">01</button>
+            <button class="talla-btn" onclick="selTalla(this)">02</button>
+            <button class="talla-btn" onclick="selTalla(this)">03</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$45.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-mujer-maq2"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Maquillaje Trendy</div>
+          <div class="product-caracteristica">Kit Trendy. Colores de temporada, máxima pigmentación.</div>
+          <div class="tallas-label">Tono</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">01</button>
+            <button class="talla-btn" onclick="selTalla(this)">02</button>
+            <button class="talla-btn" onclick="selTalla(this)">03</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$55.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-mujer-col1"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Aretes Colibrí</div>
+          <div class="product-caracteristica">Diseños exclusivos, artesanía colombiana. Piezas únicas.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">Único</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$78.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-mujer-col2"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Collar Artesanal</div>
+          <div class="product-caracteristica">Materiales naturales, hecho a mano. Arte colombiano auténtico.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">Único</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$62.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-box cat-hombre-med"><button class="img-overlay-btn">Ver Producto</button></div>
+        <div class="product-info">
+          <div class="product-name">Medias Premium</div>
+          <div class="product-caracteristica">Pack variado. Algodón premium, colores y estampados únicos.</div>
+          <div class="tallas-label">Talla</div>
+          <div class="tallas-row">
+            <button class="talla-btn" onclick="selTalla(this)">S</button>
+            <button class="talla-btn" onclick="selTalla(this)">M</button>
+            <button class="talla-btn" onclick="selTalla(this)">L</button>
+          </div>
+          <div class="product-footer"><span class="product-price">$22.000</span><button class="add-btn">+</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn" onclick="slide('muchomas',-1)">&#8592;</button>
+    <button class="carousel-btn" onclick="slide('muchomas',1)">&#8594;</button>
+    <div class="carousel-dots" id="dots-muchomas"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PÁGINA: NOSOTROS (nueva)
+═══════════════════════════════════════ -->
+<section id="page-nosotros" class="page-section">
+  <div class="nosotros-section">
+    <p class="section-heading">Nosotros</p>
+    <div class="divider" style="margin: 0 auto 28px;"></div>
+    <p class="nosotros-text">
+      FLOR nació del amor por la moda y la identidad colombiana. Somos una tienda que cree que vestirse bien es una forma de expresarse, de sentirse bien y de celebrar quién eres.<br><br>
+      Ofrecemos ropa, calzado y accesorios cuidadosamente seleccionados — desde blusas elegantes hasta artesanías hechas a mano — para que cada cliente encuentre su estilo único.
+    </p>
+    <div class="nosotros-grid">
+      <div class="nosotros-item">
+        <div class="nosotros-icon">🌸</div>
+        <div class="nosotros-item-title">Moda con identidad</div>
+        <div class="nosotros-item-desc">Piezas seleccionadas con amor</div>
+      </div>
+      <div class="nosotros-item">
+        <div class="nosotros-icon">🇨🇴</div>
+        <div class="nosotros-item-title">Hecho en Colombia</div>
+        <div class="nosotros-item-desc">Artesanías y marcas locales</div>
+      </div>
+      <div class="nosotros-item">
+        <div class="nosotros-icon">💬</div>
+        <div class="nosotros-item-title">Atención personalizada</div>
+        <div class="nosotros-item-desc">Te asesoramos por WhatsApp</div>
+      </div>
+      <div class="nosotros-item">
+        <div class="nosotros-icon">✨</div>
+        <div class="nosotros-item-title">Calidad garantizada</div>
+        <div class="nosotros-item-desc">Productos revisados y confiables</div>
+      </div>
+    </div>
+    <br><br>
+    <a href="https://wa.me/573219024318" class="btn-shop" target="_blank" style="display:inline-block;">Contáctanos</a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     WHATSAPP FLOTANTE
+═══════════════════════════════════════ -->
+<a href="https://wa.me/573219024318" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo" onclick="showPage('inicio')">
+    <span class="logo-letter">F</span><span class="logo-dot"></span>
+    <span class="logo-letter">L</span><span class="logo-dot"></span>
+    <span class="logo-letter">O</span><span class="logo-dot"></span>
+    <span class="logo-letter">R</span>
+  </div>
+  <p>&copy; 2026 FLOR — Todos los derechos reservados.</p>
+  <p>Contacto: <a href="https://wa.me/573219024318" target="_blank">321 902 4318</a></p>
+</footer>
+
+
+<!-- JS FLOR -->
+<script src="flor.js"></script>
+
+</body>
+</html>
